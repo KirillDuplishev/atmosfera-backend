@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.atmosfera.feedback.service.FeedbackService;
 
-@CrossOrigin(origins = "http://localhost:8081")
+@CrossOrigin
 @RestController
 public class FeedbackController {
 
 	@Autowired
 	private FeedbackService feedbackService;
 	
-	@CrossOrigin(origins = "http://localhost:8081")
+
 	@PostMapping("/feedback/{phoneNumber}")
 	public void call(@PathVariable("phoneNumber") String phoneNumber, @RequestBody String clientName) {
 
