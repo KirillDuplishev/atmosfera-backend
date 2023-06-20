@@ -60,7 +60,7 @@ public class FeedbackService {
         }
         catch(Exception e) {
         	
-        	System.out.println(e.getMessage());
+        	throw new RuntimeException("Error sending massage");
         	
         }
     }
