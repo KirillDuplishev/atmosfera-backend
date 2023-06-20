@@ -14,7 +14,7 @@ services:
       dockerfile: dockerfile
     ports:
       - "8080:8080"
-      - "465:465"
+      - "587:587"
     # depends_on:
     #   - database
     environment:

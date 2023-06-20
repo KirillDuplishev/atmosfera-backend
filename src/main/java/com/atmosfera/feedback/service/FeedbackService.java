@@ -35,10 +35,10 @@ public class FeedbackService {
     private void SendMessage(String fail, String messageText) {
         Properties p = new Properties();
         p.put("mail.smtp.host", "smtp.yandex.ru");
-        p.put("mail.smtp.socketFactory.port", 465);
+        p.put("mail.smtp.socketFactory.port", 587);
         p.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
         p.put("mail.smtp.auth", "true");
-        p.put("mail.smtp.port", 465);
+        p.put("mail.smtp.port", 587);
 
         Session s = Session.getInstance(p,
                 new javax.mail.Authenticator() {
