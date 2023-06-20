@@ -6,7 +6,7 @@ services:
       context: ../atmosfera
       dockerfile: dockerfile
     ports:
-      - "8081:80"
+      - "80:80"
   server:
     image: server:1.0.0
     build:
